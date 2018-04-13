@@ -1,0 +1,48 @@
+/*
+  This is a common way to reset browser specific padding and margins.
+  
+  border-box will make the content, padding and the border to be included
+  in to the total dimensions calculation, instead of just the content,
+  this important if a layout needs to work the same in each browser.
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: steelblue;
+  color: white;
+}
+
+main {
+  padding: 8px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Use classes whenever possible */
+/*Knows about flexbox*/
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: crimson;
+}

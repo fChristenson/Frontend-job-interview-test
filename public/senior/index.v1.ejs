@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- A senior that knows about responsive design should know this tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <link rel="stylesheet" href="/senior/main.v1.css">
+</head>
+
+<body>
+  <main>
+    <nav>
+      <ul class="navbar-list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#" id="open-sidebar">Open sidebar</a>
+        </li>
+        <li>
+          <a href="#" id="theme-button">Change theme</a>
+        </li>
+      </ul>
+    </nav>
+    <aside id="sidebar">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </aside>
+    <h1>Todos</h1>
+    <ul id="list">
+      <!-- A senior should know how server side rendering works -->
+      <% todos.forEach(function(todo) { %>
+        <li>
+          <%= todo %>
+        </li>
+        <% }); %>
+    </ul>
+    <form id="form">
+      <input id="todo-field" type="text" name="search" placeholder="search">
+    </form>
+  </main>
+  <script src="/bundle.senior.v1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- A senior that knows about responsive design should know this tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <link rel="stylesheet" href="/senior/main.v3.css">
+</head>
+
+<body>
+  <main class="main">
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <!-- A senior should take care of semantic markup, links are not buttons -->
+          <!-- custom attributes shows experiences with scale -->
+          <button class="button" data-js="open-sidebar" data-theme="button">Open sidebar</button>
+        </li>
+        <li>
+          <!-- A senior should take care of semantic markup, links are not buttons -->
+          <!-- custom attributes shows experiences with scale -->
+          <button class="button" data-js="theme-button" data-theme="button">Change theme</button>
+        </li>
+      </ul>
+    </nav>
+    <aside class="sidebar" data-js="sidebar">
+      <ul class="sidebar__ul">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+      <div class="sidebar__click-catcher" data-js="sidebar-click-catcher"></div>
+    </aside>
+    <h1>Todos</h1>
+    <ul class="list" data-js="list">
+      <!-- A senior should know how server side rendering works -->
+      <% todos.forEach(function(todo) { %>
+        <li>
+          <%= todo %>
+        </li>
+        <% }); %>
+    </ul>
+    <form data-js="form">
+      <input data-js="todo-field" type="text" name="search" placeholder="search">
+    </form>
+  </main>
+  <script src="/bundle.senior.v3.js"></script>
+</body>
+
+</html>

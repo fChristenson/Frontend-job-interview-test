@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: steelblue;
+  color: white;
+}
+
+main {
+  padding: 8px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Knows about flexbox*/
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: crimson;
+}
+
+/*Uses translate3d, knows about rendering performance*/
+#sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background: rgba(111, 111, 111, 1);
+  transform: translate3d(-200px, 0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-open {
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.themed {
+  color: gold !important;
+}

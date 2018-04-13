@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: steelblue;
+  color: white;
+}
+
+/*The color contrast against a blue background is too low*/
+:focus {
+  outline: 2px solid orange;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* A senior should be aware of css architectures such as BEM */
+.body--themed {
+  color: gold;
+}
+
+.button {
+  background: none;
+  color: white;
+  border: none;
+}
+
+/*
+  Using css and a body class we can change all the elements style.
+  Using a custom attribute creates a connection between our css and html
+  that means more than just a css classname.
+*/
+.body--themed [data-theme="button"] {
+  color: gold;
+}
+
+.main {
+  padding: 8px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.navbar {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: crimson;
+}
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+}
+
+.sidebar--open {
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.sidebar__ul,
+.sidebar__click-catcher {
+  flex: 1 1 auto;
+}
+
+.sidebar__ul {
+  background: rgba(111, 111, 111, 1);
+  padding: 8px;
+}
+
+/* Knows about media queries */
+@media screen and (min-width: 768px) {
+  .sidebar__ul {
+    flex: 0 0 200px;
+  }
+}
+
+/*
+  But why not use css grid?
+  
+  Css grid could be used for this layout to show that
+  the candidate knows it but it would be the wrong tool
+  for this layout, which makes it tricky to know
+  if the candidate is showing off or doesn't know when to
+  use what.
+
+  Never assume that knowing what is trendy means skill,
+  skill is knowing when to use what.
+  Pick the right tool for the job, always.
+*/

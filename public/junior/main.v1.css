@@ -1,0 +1,35 @@
+body {
+  background: steelblue;
+  color: white;
+}
+
+main {
+  padding: 8px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/*Knows about flexbox*/
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: crimson;
+}
