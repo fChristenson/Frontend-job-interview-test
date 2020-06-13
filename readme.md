@@ -97,26 +97,34 @@ Good answer: LTS support and motivate why
 ### What is your favourite feature in css and why?
 
 Bad answer: I don't know
+
 Decent answer: flexbox, css variables
+
 Good answer: css grid and motivate why
 
 
 ### What is your favourite feature in Javascript and why?
 
 Bad answer: I don't know
+
 Decent answer: async/await, generators, es6 support, map/filter/reduce
+
 Good answer: Object.freeze, fetch, guarding, modules and motivate why
 
 
 ### What is the most difficult part of a frontend project and why?
 
 Bad answer: To get the UI to look and feel good
+
 Decent answer: To make everything consistent in every browser
+
 Good answer: To keep up the test coverage, bet on the right tools, keep animations at 60 fps, avoid tech debt
 
 
 ### How would you fix a slow website?
 
 Bad answer: I don't know
+
 Decent answer: Ship less code, improve the perceived load time, use lazy loading, reduce asset weight
+
 Good answer: use the browser profiler to investigate, reduce the number of http calls, use vanilla Javascript
